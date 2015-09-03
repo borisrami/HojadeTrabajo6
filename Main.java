@@ -185,6 +185,92 @@ public class Main {
 			
 		}
 		
+		
+		if(java.size()>web.size() && java.size()>celulares.size()){
+			
+			System.out.println("El grupo con mas grandes cantidad de desarrolladores es java.");
+			Iterator<String> mayor = java.iterator();
+			while(mayor.hasNext()){
+				System.out.println(mayor.next());	
+			}
+			
+			System.out.println("Ordenados:");
+			mayor = java.iterator();
+			Set<String> ordenamiento= new TreeSet<String>();
+			while(mayor.hasNext()){
+					ordenamiento.add(mayor.next());	
+			}
+			
+			Iterator<String> orden = ordenamiento.iterator();
+			while(orden.hasNext()){
+				System.out.println(orden.next());	
+			}
+			
+		}
+		
+		if(web.size()>java.size() && web.size()>celulares.size()){
+			
+			System.out.println("El grupo con mas grandes cantidad de desarrolladores es web.");
+			Iterator<String> mayor = web.iterator();
+			while(mayor.hasNext()){
+				System.out.println(mayor.next());
+			}
+			
+			System.out.println("Ordenados:");
+			
+			mayor = java.iterator();
+			Set<String> ordenamiento= new TreeSet<String>();
+			while(mayor.hasNext()){
+				ordenamiento.add(mayor.next());
+			}
+			Iterator<String> orden = ordenamiento.iterator();
+			while(orden.hasNext()){
+				System.out.println(orden.next());	
+			}
+					
+		}
+		
+		
+		
+		if(celulares.size()>java.size() && celulares.size()>web.size()){
+			
+			System.out.println("El grupo con mas grandes cantidad de desarrolladores es celulares.");
+			Iterator<String> mayor = celulares.iterator();
+			while(mayor.hasNext()){
+				System.out.println(mayor.next());
+			}
+			
+			System.out.println("Ordenados:");
+			
+			
+			mayor = java.iterator();
+			Set<String> ordenamiento= new TreeSet<String>();
+			while(mayor.hasNext()){
+				ordenamiento.add(mayor.next());
+			}
+			
+		
+			
+			Iterator<String> orden = ordenamiento.iterator();
+			while(orden.hasNext()){
+				System.out.println(orden.next());	
+			}
+					
+		}
+		
+		
+					
+					
+				}
+				
+			
+			
+		
+		
+		
+		
+		
+	}
 
 
 
