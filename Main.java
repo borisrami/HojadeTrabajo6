@@ -166,3 +166,25 @@ public class Main {
 		while(resultadoIterator.hasNext()){
 			System.out.println(resultadoIterator.next());
 		}
+		
+		
+		int contador=0;
+		while(javaIterator.hasNext()){
+			String javaElement= javaIterator.next();
+			if(web.contains(javaElement)){
+				contador += 1;
+				
+			}
+			
+			if(java.size()==contador&& web.size()>java.size()){
+				System.out.println("Es un Subconjunto");
+			}else{
+				System.out.println("No es un Subconjunto");
+			}
+			
+			
+		}
+		
+
+
+
