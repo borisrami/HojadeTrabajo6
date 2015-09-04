@@ -1,7 +1,6 @@
-* @author Universidad del Valle de Guatemala
+/* @author Universidad del Valle de Guatemala
  * @author Bryan Chan  Carnet: 14469
  * @author Boris Cifuentes Carnet: 14150
- * 
  */
 
 import java.util.*;
@@ -25,6 +24,9 @@ public class Main {
 		boolean continuar = true;
 		int seleccion;
 		String nombre;
+		/*
+		 * variables para definir si una persona debe ser ingresada a un conjunto.
+		 */
 		boolean bjava;
 		boolean bweb;
 		boolean bcelulares;
@@ -230,8 +232,6 @@ public class Main {
 					
 		}
 		
-		
-		
 		if(celulares.size()>java.size() && celulares.size()>web.size()){
 			
 			System.out.println("El grupo con mas grandes cantidad de desarrolladores es celulares.");
@@ -256,21 +256,6 @@ public class Main {
 				System.out.println(orden.next());	
 			}
 					
-		}
-		
-		
-					
-					
-				}
-				
-			
-			
-		
-		
-		
-		
-		
-	}
-
-
-
+		}	
+	}	
+}
